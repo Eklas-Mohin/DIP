@@ -9,7 +9,6 @@ img1 = imread('cameraman.tif');
 img2 = imread('rice.png');
 
 [m, n] = size(img1);
-
 sub_img = zeros(m, n);
 
 for i = 1:m
