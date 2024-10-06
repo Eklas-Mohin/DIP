@@ -10,14 +10,13 @@ neg_img = zeros(m, n);
 
 for i = 1:m
     for j = 1:n
-
+        
         r = double(img(i, j, 1));
         g = double(img(i, j, 2));
         b = double(img(i, j, 3));
 
         gray_val = r * 0.2989 + g * 0.5870 + b * 0.1140;
         neg_img(i, j) = 255 - gray_val;
-
     end
 end
 
